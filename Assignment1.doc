@@ -1,0 +1,94 @@
+
+// Assignment 1
+
+[acadgild@localhost ~]$ jps  // command to check all the java processes running in the sysytem.
+3290 Jps
+
+
+[acadgild@localhost ~]$ sudo service sshd start  // command to start ssh server as to start all the hadoop daemons without password authentication.
+[sudo] password for acadgild: 
+You have new mail in /var/spool/mail/acadgild
+
+
+[acadgild@localhost ~]$ start-all.sh   // command to start all the daemons of hadoop.
+This script is Deprecated. Instead use start-dfs.sh and start-yarn.sh
+18/05/21 19:48:39 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Starting namenodes on [localhost]
+localhost: starting namenode, logging to /home/acadgild/install/hadoop/hadoop-2.6.5/logs/hadoop-acadgild-namenode-localhost.localdomain.out
+localhost: starting datanode, logging to /home/acadgild/install/hadoop/hadoop-2.6.5/logs/hadoop-acadgild-datanode-localhost.localdomain.out
+Starting secondary namenodes [0.0.0.0]
+0.0.0.0: starting secondarynamenode, logging to /home/acadgild/install/hadoop/hadoop-2.6.5/logs/hadoop-acadgild-secondarynamenode-localhost.localdomain.out
+18/05/21 19:49:02 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+starting yarn daemons
+starting resourcemanager, logging to /home/acadgild/install/hadoop/hadoop-2.6.5/logs/yarn-acadgild-resourcemanager-localhost.localdomain.out
+localhost: starting nodemanager, logging to /home/acadgild/install/hadoop/hadoop-2.6.5/logs/yarn-acadgild-nodemanager-localhost.localdomain.out
+
+
+
+[acadgild@localhost ~]$ mr-jobhistory-daemon.sh start historyserver     // command to start the job historyserver
+starting historyserver, logging to /home/acadgild/install/hadoop/hadoop-2.6.5/logs/mapred-acadgild-historyserver-localhost.localdomain.out
+You have new mail in /var/spool/mail/acadgild
+
+
+[acadgild@localhost ~]$ pwd   // command to list the current directory
+/home/acadgild
+
+
+[acadgild@localhost ~]$ ls -ls    // command to list all the files and folder in current directory with description.
+total 56
+4 drwxr-xr-x.  3 acadgild acadgild 4096 May 12 03:13 Desktop
+4 drwxr-xr-x.  2 acadgild acadgild 4096 Feb  2 12:52 Documents
+4 drwxr-xr-x.  2 acadgild acadgild 4096 Feb 13 14:24 Downloads
+4 drwxrwxr-x.  3 acadgild acadgild 4096 Dec 29 16:59 eclipse
+4 drwxrwxr-x.  3 acadgild acadgild 4096 Jan 16 14:02 eclipse-workspace
+4 drwxrwxr-x. 13 acadgild acadgild 4096 Feb  9 18:06 install
+4 drwxr-xr-x.  2 acadgild acadgild 4096 Dec 27 17:03 Music
+4 drwxr-xr-x.  2 acadgild acadgild 4096 Dec 27 17:03 Pictures
+8 -rw-rw-r--.  1 acadgild acadgild 7819 May 19 13:25 pig_1526716500704.log
+4 drwxr-xr-x.  2 acadgild acadgild 4096 Dec 27 17:03 Public
+4 drwxr-xr-x.  2 acadgild acadgild 4096 Dec 27 17:03 Templates
+4 -rw-rw-r--.  1 acadgild acadgild   44 May 19 13:32 test.txt
+4 drwxr-xr-x.  2 acadgild acadgild 4096 Dec 27 17:03 Videos
+
+
+[acadgild@localhost ~]$ nano demo.txt    // command to create a file using nano editor
+You have new mail in /var/spool/mail/acadgild
+
+
+[acadgild@localhost ~]$ ls -ls
+total 60
+4 -rw-rw-r--.  1 acadgild acadgild   27 May 21 19:50 demo.txt
+4 drwxr-xr-x.  3 acadgild acadgild 4096 May 12 03:13 Desktop
+4 drwxr-xr-x.  2 acadgild acadgild 4096 Feb  2 12:52 Documents
+4 drwxr-xr-x.  2 acadgild acadgild 4096 Feb 13 14:24 Downloads
+4 drwxrwxr-x.  3 acadgild acadgild 4096 Dec 29 16:59 eclipse
+4 drwxrwxr-x.  3 acadgild acadgild 4096 Jan 16 14:02 eclipse-workspace
+4 drwxrwxr-x. 13 acadgild acadgild 4096 Feb  9 18:06 install
+4 drwxr-xr-x.  2 acadgild acadgild 4096 Dec 27 17:03 Music
+4 drwxr-xr-x.  2 acadgild acadgild 4096 Dec 27 17:03 Pictures
+8 -rw-rw-r--.  1 acadgild acadgild 7819 May 19 13:25 pig_1526716500704.log
+4 drwxr-xr-x.  2 acadgild acadgild 4096 Dec 27 17:03 Public
+4 drwxr-xr-x.  2 acadgild acadgild 4096 Dec 27 17:03 Templates
+4 -rw-rw-r--.  1 acadgild acadgild   44 May 19 13:32 test.txt
+4 drwxr-xr-x.  2 acadgild acadgild 4096 Dec 27 17:03 Videos
+
+
+
+[acadgild@localhost ~]$ cat demo.txt     command to show the content of the file.
+Hi 
+This is my first page.
+
+
+
+[acadgild@localhost ~]$ jps
+4032 NodeManager
+4505 Jps
+3929 ResourceManager
+3723 SecondaryNameNode
+3467 NameNode
+4379 JobHistoryServer
+
+
+
+
+
